@@ -1,0 +1,31 @@
+'use client';
+import { ArcElement, Chart, Legend, Tooltip } from 'chart.js';
+import React from 'react'
+import { Doughnut } from 'react-chartjs-2';
+
+Chart.register(ArcElement, Tooltip, Legend)
+
+const DoughnutChart = () => {
+    const data = {
+        datasets: [
+            {
+                label: 'Banks',
+                data: [1250, 2570, 3750],
+                backgroundColor: ['#0747b6', '#2265D8', '#2f91fa']
+            }   
+        ],
+        labels: ['Bank 1', 'Bank 2', 'Bank 3']
+    }
+  return (
+    <Doughnut data={data} options={{
+        cutout: '60%',
+        plugins: {
+            legend: {
+                display: false
+            }
+        }
+    }}/>
+  )
+}
+
+export default DoughnutChart
