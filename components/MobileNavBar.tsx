@@ -7,14 +7,14 @@ import {
 } from '@/components/ui/sheet'
 import { sidebarLinks } from '@/constants'
 import { cn } from '@/lib/utils'
-import { Link } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link';
 import { usePathname } from 'next/navigation'
 
 const MobileNavBar = ({ user }: MobileNavProps) => {
   const pathName = usePathname()
   return (
-    <section className='w-fulll max-w-[265px]'>
+    <section className='w-full max-w-[265px]'>
       <Sheet>
         <SheetTrigger>
           <Image
