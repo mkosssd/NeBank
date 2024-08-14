@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const ibmPlexSerif = IBM_Plex_Serif({ subsets: ["latin"], weight: ['400', '700'], variable: '--font-ibm-flex-serif' });
 
 export const metadata: Metadata = {
-  title: "Nex Bank",
+  title: "NeBank",
   description: "A Bank app built using Next.JS",
   icons: {
     icon: '/icons/logo.svg'

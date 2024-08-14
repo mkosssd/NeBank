@@ -21,7 +21,7 @@ export default async function RootLayout({
             <SideBar user={loggedIn}/>
             <div className="flex size-full flex-col">
                 <div className="root-layout">
-                    <Image src="/icons/logo.svg" alt="Nex Bank Logo" width={30} height={30}/>
+                    <Image src="/icons/logo.svg" alt="NeBank Logo" width={30} height={30}/>
                     <div>
                         <MobileNavBar user={loggedIn}/>
                     </div>

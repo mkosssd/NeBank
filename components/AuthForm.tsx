@@ -99,10 +99,10 @@ const AuthForm = ({ type }: { type: 'sign-in' | 'sign-up' }) => {
                 src='/icons/logo.svg'
                 width={34}
                 height={34}
-                alt='Nex Bank Logo'
+                alt='NeBank Logo'
             />
             <h1 className='text-26 font-ibm-plex-serif font-bold text-black-1'>
-                Nex Bank
+                NeBank
             </h1>
             </Link>
             <div className='flex flex-col gap-1 md:gap-3'>

@@ -20,10 +20,10 @@ const SideBar = ({ user }: SiderbarProps) => {
             src='/icons/logo.svg'
             width={34}
             height={34}
-            alt='Nex Bank Logo'
+            alt='NeBank Logo'
             className='size-[24px] max-xl:size-14'
           />
-          <h1 className='sidebar-logo'>Nex Bank</h1>
+          <h1 className='sidebar-logo'>NeBank</h1>
         </Link>
         {sidebarLinks.map(item => {
           const isActive =
