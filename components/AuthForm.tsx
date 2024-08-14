@@ -55,7 +55,6 @@ const AuthForm = ({ type }: { type: 'sign-in' | 'sign-up' }) => {
         // Do something with the form values.
         // ✅ This will be type-safe and validated.
         try {
-            console.log(type);
             
             if(type === 'sign-up'){
                 // const userData = {
@@ -86,7 +85,6 @@ const AuthForm = ({ type }: { type: 'sign-in' | 'sign-up' }) => {
         } finally {
             // setIsLoading(false)
         }
-        console.log(data)
     }
     return (
         <section className='auth-form'>
