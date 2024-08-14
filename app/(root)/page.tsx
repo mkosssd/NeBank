@@ -6,7 +6,6 @@ import React from 'react'
 
 const Home = async() => {
   const loggedIn = await getLoggedInUser()
-  console.log(loggedIn);
   
   return (
     <section className='home'>
@@ -15,7 +14,7 @@ const Home = async() => {
           <HeaderBox
             title='Welcome'
             type='greeting'
-            user={loggedIn.name || 'Guest'}
+            user={loggedIn?.name || 'Guest'}
             subtext='Access and manage your account and transactions efficiently.'
           />
           <TotalBalanceBox
