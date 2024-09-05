@@ -264,7 +264,7 @@ import { addFundingSource, createDwollaCustomer } from './dwolla.actions'
                 BANK_COLLECTION_ID!,
                 [Query.equal('$id',[documentId])]
             )
-            return parseStringify(bank.documents)
+            return parseStringify(bank.documents[0])
         } catch (error) {
             console.log(error);
             
