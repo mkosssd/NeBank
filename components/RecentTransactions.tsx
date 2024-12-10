@@ -13,10 +13,10 @@ const RecentTransactions = ({appwriteItemId, accounts, transactions = [], page =
             <h2 className="recent-transactions-label">Recent Transactions</h2>
             <Link href={`/transactions-history/?id=${appwriteItemId}`} className='view-all-btn'>View All</Link>
         </header>
-        <Tabs defaultValue={appwriteItemId} className="w-[400px]">
+        <Tabs defaultValue={appwriteItemId} >
             <TabsList className='recent-transactions-tablist'>
                 {accounts.map((account: Account)=>(
-                    <TabsTrigger key={account.id} value={account.appwriteItemId}>
+                    <TabsTrigger className="w-[400px]" key={account.id} value={account.appwriteItemId}>
                         <BankTabItem account={account} key={account.id} appwriteItemId={appwriteItemId}/>
                     </TabsTrigger>
                 ))}
